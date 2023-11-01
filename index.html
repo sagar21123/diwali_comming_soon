@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+​
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Rubik', sans-serif;
+            color: white;
+        }
+​
+        body {
+            width: 100vw;
+            height: 100vh;
+            font-family: sans-serif;
+            /* background: url(./main_bg.png);
+            background-position: center;
+            background-repeat: no-repeat; */
+            background-color: #270108;
+            margin: 0;
+            overflow-x: hidden;
+        }
+​
+        /* .header {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            position: relative;
+            background: url(./Header.png);
+            background-position: center;
+            background-repeat: no-repeat;
+        } */
+​
+        .arrow {
+            height: 20px;
+            width: 20px;
+        }
+​
+        .mid_header {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+​
+        .main_heading {
+            font-weight: 600;
+            color: rgb(252, 222, 100);
+        }
+​
+        .sub_heading {
+            font-weight: 300;
+            font-size: 0.8rem;
+        }
+​
+        .info_details {
+            margin: 2rem;
+            color: white;
+            letter-spacing: 0.02em;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 1rem;
+        }
+​
+        .info_items {
+            list-style-type: none;
+        }
+​
+        .info_head {
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+​
+        .info_row {
+            font-weight: 400;
+            font-size: 14px;
+            margin-bottom: 0.2rem;
+        }
+​
+        .hand_img {
+            margin-right: 5px;
+            height: 10px;
+            width: 16px;
+        }
+​
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            border: 2px solid white;
+            margin : 1rem 0;
+            /* Border color set to a dark shade of gray */
+        }
+​
+        th,
+        td {
+            border: 1px solid white;
+            /* Border color set to a lighter shade of gray */
+            padding: 8px;
+            text-align: center;
+        }
+        .note{
+            /* font-size: 0.8rem; */
+            /* color: rgb(252, 222, 100); */
+            /* text-wrap: nowrap; */
+            font-weight: 100;
+            font-size: 0.7rem;
+            
+        }
+        .coming{
+            padding: 2rem 1rem 0 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+​
+​
+        @media (max-width : 768px) {
+            .header {
+                padding: 2rem 1rem;
+                background-size: cover;
+            }
+​
+            .mid_header {
+                gap: 0.3rem;
+            }
+​
+            .main_heading {
+                font-size: 1.3rem;
+                text-wrap: nowrap;
+                color: rgb(252, 222, 100);
+            }
+​
+            .sub_heading {
+                text-wrap: nowrap;
+                font-size: 0.9rem;
+            }
+​
+            table {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+​
+<body>
+    <!-- <div class="header">
+        <img src="./arrow.png" alt="" class="arrow">
+        <div class="mid_header">
+            <h2 class="main_heading">DIWALI LEADERBOARD</h2>
+            <h4 class="sub_heading">Win Guaranteed 1gm <b style="color: rgb(252, 222, 100); ">GOLD</b> coin</h4>
+        </div>
+    </div> -->
+    <h1 class="coming">COMING SOON <span style="color: aquamarine;">&#62;&#62;</span> </h1>
+    <div style="margin: 2rem 1rem 0 2rem; display: flex; gap: 3rem; justify-content: space-around; align-items: center; ">
+        <span>Start Date : 9 Nov 2023 12:00AM</span>
+        <span>End Date : 15 Nov 2023 11:59PM</span>
+    </div>
+    <div class="info_details">
+        <h3 class="info_head">Leaderboard Prizes Breakup : </h3>
+        <table>
+            <tr>
+                <th>Prize</th>
+                <th>Rank</th>
+            </tr>
+            <tr>
+                <td style="display: flex; align-items:  center; justify-content: center; gap: 0.3rem;">1gm Gold Coin</td>
+                <td>1st</td>
+            </tr>
+            <tr>
+                <td style="display: flex; align-items:  center; justify-content: center; gap: 0.3rem;">0.5gm Gold Coin</td>
+                <td>2nd</td>
+            </tr>
+            <tr>
+               <td style="display: flex; align-items:  center; justify-content: center; gap: 0.3rem;">20gm Silver Coin</td>
+                <td>3rd</td>
+            </tr>
+            <tr>
+                <td>₹501/- Real Cash</td>
+                <td>4-10</td>
+            </tr>
+            <tr>
+                <td>₹201/- Real Cash</td>
+                <td>11-50</td>
+            </tr>
+            <tr>
+                <td>₹101/- Real Cash</td>
+                <td>51-100</td>
+            </tr>
+            <tr>
+                <td>₹51/- Real Cash</td>
+                <td>101-150</td>
+            </tr>
+            <tr>
+                <td>₹25/- Real Cash</td>
+                <td>151-200</td>
+            </tr>
+            <tr>
+                <td>₹10/- Real Cash</td>
+                <td>201-300</td>
+            </tr>
+        </table>
+        <span class="note">*For any queries, contact our Support Team <u>9205479988</u>.</span>
+    </div>
+</body>
+​
+</html>
